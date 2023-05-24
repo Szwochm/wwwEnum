@@ -1,0 +1,407 @@
+File Name Differences between master and RELENG_2_5_1.csv:
+Files missing from first version:
+Files missing from second version:
++ system_register.php
+
+File Name Differences between RELENG_2_5_1 and RELENG_2_4_5.csv:
+Files missing from first version:
+- status_lb_vs.php
+- load_balancer_pool.php
+- load_balancer_virtual_server.php
+- status_lb_pool.php
+- load_balancer_setting.php
+- load_balancer_monitor_edit.php
+- load_balancer_pool_edit.php
+- status_pkglogs.php
+- load_balancer_virtual_server_edit.php
+- apple-touch-icon.png
+- load_balancer_monitor.php
+Files missing from second version:
++ apple-touch
++ status_logs_packages.php
++ system_certmanager_renew.php
++ services_captiveportal_hasync.php
+
+File Name Differences between RELENG_2_4_5 and RELENG_2_4_4.csv:
+Files missing from first version:
+Files missing from second version:
+
+File Name Differences between RELENG_2_4_4 and RELENG_2_4_3.csv:
+Files missing from first version:
+- license.php
+Files missing from second version:
++ services_acb.php
++ csrf_error.php
++ status_unbound.php
++ services_acb_backup.php
++ services_acb_settings.php
+
+File Name Differences between RELENG_2_4_3 and RELENG_2_4_2.csv:
+Files missing from first version:
+- copynotice.inc
+Files missing from second version:
++ getqueuestats.php
+
+File Name Differences between RELENG_2_4_2 and RELENG_2_4_1.csv:
+Files missing from first version:
+Files missing from second version:
++ upgrnotice.inc
+
+File Name Differences between RELENG_2_4_1 and RELENG_2_4_0.csv:
+Files missing from first version:
+Files missing from second version:
+
+File Name Differences between RELENG_2_4_0 and RELENG_2_3_5.csv:
+Files missing from first version:
+- diag_nanobsd.php
+- restart_httpd.php
+Files missing from second version:
++ logo.svg
++ copynotice.inc
+
+File Name Differences between RELENG_2_3_5 and RELENG_2_3_4.csv:
+Files missing from first version:
+Files missing from second version:
+
+File Name Differences between RELENG_2_3_4 and RELENG_2_3_3.csv:
+Files missing from first version:
+- logo-black.png
+- logo.png
+- pfs-mini.png
+Files missing from second version:
++ favicon-32x32.png
++ safari-pinned-tab.svg
++ android-chrome-512x512.png
++ manifest.json
++ android-chrome-192x192.png
++ mstile-150x150.png
++ browserconfig.xml
++ favicon-16x16.png
+
+File Name Differences between RELENG_2_3_3 and RELENG_2_3_2.csv:
+Files missing from first version:
+- fend.inc
+- fbegin.inc
+Files missing from second version:
++ services_checkip.php
++ services_checkip_edit.php
+
+File Name Differences between RELENG_2_3_2 and RELENG_2_3_1.csv:
+Files missing from first version:
+- copyright-master.txt
+Files missing from second version:
++ system_user_settings.php
+
+File Name Differences between RELENG_2_3_1 and RELENG_2_3_0.csv:
+Files missing from first version:
+Files missing from second version:
+
+File Name Differences between RELENG_2_3_0 and RELENG_2_2.csv:
+Files missing from first version:
+- system_usermanager_settings_test.php
+- vpn_pptp_users_edit.php
+- diag_logs_openvpn.php
+- carp_status.php
+- logobig.jpg
+- diag_logs_ipsec.php
+- tree-images
+- pkg_mgr_settings.php
+- gui.css
+- system_firmware_settings.php
+- code-syntax-highlighter
+- system_firmware.php
+- diag_logs_filter.php
+- green_dot.jpg
+- status_rrd_graph.php
+- niftycssprintCode.css
+- diag_logs_auth.php
+- diag_system_pftop.php
+- diag_ipsec.php
+- diag_logs.php
+- vpn_pppoe_edit.php
+- diag_logs_wireless.php
+- themes
+- exec.php
+- diag_ipsec_spd.php
+- diag_ipsec_leases.php
+- vpn_pptp_users.php
+- vpn_pppoe.php
+- diag_patterns.php
+- protochart
+- tree
+- diag_logs_filter_summary.php
+- diag_ipsec_sad.php
+- reboot.php
+- halt.php
+- edit.php
+- filebrowser
+- diag_logs_dhcp.php
+- diag_logs_relayd.php
+- diag_logs_settings.php
+- javascript
+- system_usermanager_settings_ldapacpicker.php
+- diag_logs_vpn.php
+- niftycssCode.css
+- treeview.css
+- headjs.php
+- status_rrd_graph_img.php
+- diag_logs_filter_dynamic.php
+- diag_pkglogs.php
+- system_firmware_check.php
+- system_firmware_restorefullbackup.php
+- system_firmware_auto.php
+- status_rrd_graph_settings.php
+- vpn_pptp.php
+- diag_logs_ntpd.php
+- diag_logs_resolver.php
+- diag_logs_ppp.php
+- diag_logs_gateways.php
+- firewall_shaper_layer7.php
+- diag_logs_routing.php
+Files missing from second version:
++ services_pppoe.php
++ status_logs_filter.php
++ diag_halt.php
++ status_ipsec_leases.php
++ services_ntpd_acls.php
++ status_logs_common.inc
++ status_logs_filter_dynamic.php
++ logo-black.png
++ pfs-mini.png
++ vendor
++ status_pkglogs.php
++ diag_pftop.php
++ status_carp.php
++ status_ipsec.php
++ status_logs_settings.php
++ logo.png
++ diag_reboot.php
++ js
++ diag_edit.php
++ status_ipsec_sad.php
++ services_pppoe_edit.php
++ status_logs_vpn.php
++ foot.inc
++ copyright-master.txt
++ status_ipsec_spd.php
++ status_logs.php
++ status_logs_filter_summary.php
++ diag_command.php
++ system_update_settings.php
+
+File Name Differences between RELENG_2_2 and RELENG_2_1.csv:
+Files missing from first version:
+- load_balancer_relay_action_edit.php
+- diag_ipsec_xml.php
+- load_balancer_relay_protocol_edit.php
+- installer
+- load_balancer_relay_protocol.php
+- load_balancer_relay_action.php
+Files missing from second version:
++ services_unbound_host_edit.php
++ services_unbound_advanced.php
++ diag_gmirror.php
++ services_unbound_acls.php
++ services_ntpd_gps.php
++ services_unbound_domainoverride_edit.php
++ services_ntpd_pps.php
++ diag_ipsec_leases.php
++ vpn_ipsec_settings.php
++ services_unbound.php
+
+File Name Differences between RELENG_2_1 and RELENG_2_0.csv:
+Files missing from first version:
+Files missing from second version:
++ services_dhcpv6_relay.php
++ diag_ndp.php
++ load_balancer_setting.php
++ status_dhcpv6_leases.php
++ firewall_nat_npt_edit.php
++ services_captiveportal_zones_edit.php
++ diag_testport.php
++ system_hasync.php
++ services_dhcpv6.php
++ diag_sockets.php
++ shortcuts.inc
++ shortcuts
++ services_captiveportal_zones.php
++ services_dhcpv6_edit.php
++ status_captiveportal_expire.php
++ system_firmware_restorefullbackup.php
++ css
++ diag_logs_resolver.php
++ services_router_advertisements.php
++ diag_logs_gateways.php
++ firewall_nat_npt.php
++ diag_logs_routing.php
+
+File Name Differences between RELENG_2_0 and RELENG_1_2.csv:
+Files missing from first version:
+- exec_raw.php
+- m0n0
+- vpn_openvpn_srv.php
+- interfaces_wan.php
+- vpn_openvpn.php
+- system_advanced_create_certs.php
+- vpn_ipsec_ca_edit_create_cert.php
+- status_slbd_vs.php
+- row_toggle.js
+- services_captiveportal_users.php
+- ip_helper.js
+- firewall_shaper_edit.php
+- vpn_openvpn_ccd.php
+- vpn_ipsec_ca.php
+- vpn_pppoe_users_edit.php
+- dtree.js
+- draglist.js
+- sajax
+- interfaces_lan.php
+- vpn_openvpn_crl_edit.php
+- vpn_openvpn_srv_edit.php
+- row_helper.js
+- wlan_strong_key_generator
+- niftyjsCode.js
+- services_proxyarp_edit.php
+- vpn_openvpn_create_certs.php
+- ticker.js
+- firewall_shaper_queues_edit.php
+- vpn_ipsec_edit.php
+- interfaces_wlan_scan.php
+- ifstats.cgi
+- diag_dhcp_leases.php
+- vpn_pppoe_users.php
+- status_slbd_pool.php
+- services_captiveportal_users_edit.php
+- vpn_ipsec_ca_edit.php
+- preload.php
+- progress.php
+- vpn_openvpn_crl.php
+- pool.js
+- services_proxyarp.php
+- vpn_openvpn_cli_edit.php
+- firewall_rules_schedule_logic.php
+- datetimepicker.js
+- dom-drag.js
+- diag_logs_slbd.php
+- vpn_openvpn_ccd_edit.php
+- row_helper_dynamic.js
+- vpn_openvpn_cli.php
+- interfaces_opt.php
+- system_advanced.php
+- auto_complete_helper.js
+- interfaces_wlan.inc
+- filterparser.php
+- services_usermanager.php
+Files missing from second version:
++ system_usermanager_settings_test.php
++ interfaces_bridge_edit.php
++ system_authservers.php
++ load_balancer_monitor_edit.php
++ status_openvpn.php
++ interfaces_groups.php
++ load_balancer_monitor.php
++ diag_smart.php
++ interfaces_gif.php
++ diag_system_activity.php
++ system_gateways_edit.php
++ system_groupmanager.php
++ vpn_ipsec_phase1.php
++ status_lb_vs.php
++ status_ntpd.php
++ filebrowser
++ vpn_openvpn_csc.php
++ interfaces_qinq_edit.php
++ easyrule.php
++ diag_logs_ppp.php
++ diag_tables.php
++ diag_authentication.php
++ interfaces_groups_edit.php
++ system_gateway_groups.php
++ stats.php
++ interfaces_gre_edit.php
++ system_advanced_misc.php
++ diag_limiter_info.php
++ diag_ipsec_xml.php
++ graph_cpu.php
++ services_dyndns_edit.php
++ interfaces_gif_edit.php
++ status_captiveportal_vouchers.php
++ services_igmpproxy.php
++ interfaces_bridge.php
++ services_captiveportal_vouchers_edit.php
++ interfaces_wireless_edit.php
++ vpn_pppoe_edit.php
++ system_advanced_admin.php
++ diag_logs_wireless.php
++ diag_states_summary.php
++ diag_patterns.php
++ diag_dump_states_sources.php
++ tree
++ vpn_l2tp_users.php
++ services_captiveportal_hostname.php
++ vpn_l2tp.php
++ system_usermanager_settings_ldapacpicker.php
++ vpn_openvpn_client.php
++ services_captiveportal_hostname_edit.php
++ load_balancer_relay_protocol.php
++ diag_dns.php
++ headjs.php
++ diag_pf_info.php
++ system_usermanager_addprivs.php
++ system_groupmanager_addprivs.php
++ bandwidth_by_ip.php
++ interfaces_wireless.php
++ widgets
++ system_usermanager_settings.php
++ firewall_aliases_import.php
++ status_captiveportal_voucher_rolls.php
++ system_gateway_groups_edit.php
++ diag_system_pftop.php
++ load_balancer_relay_action_edit.php
++ system_advanced_network.php
++ status_dhcp_leases.php
++ crash_reporter.php
++ status_captiveportal_test.php
++ system_usermanager.php
++ firewall_shaper_vinterface.php
++ system_crlmanager.php
++ protochart
++ system_usermanager_passwordmg.php
++ interfaces_ppps_edit.php
++ status_lb_pool.php
++ diag_logs_filter_summary.php
++ help.php
++ services_igmpproxy_edit.php
++ firewall_shaper_wizards.php
++ status_gateways.php
++ system_advanced_firewall.php
++ load_balancer_relay_protocol_edit.php
++ firewall_shaper_layer7.php
++ status_graph_cpu.php
++ services_rfc2136_edit.php
++ pkg_mgr_settings.php
++ interfaces_lagg_edit.php
++ getstats.php
++ services_ntpd.php
++ vpn_l2tp_users_edit.php
++ load_balancer_relay_action.php
++ status_gateway_groups.php
++ system_gateways.php
++ getserviceproviders.php
++ csrf
++ system_camanager.php
++ services_captiveportal_vouchers.php
++ installer
++ classes
++ system_advanced_sysctl.php
++ vpn_openvpn_server.php
++ interfaces_gre.php
++ vpn_ipsec_phase2.php
++ services_rfc2136.php
++ interfaces_qinq.php
++ diag_logs_relayd.php
++ system_certmanager.php
++ interfaces_lagg.php
++ system_advanced_notifications.php
++ interfaces_ppps.php
+
