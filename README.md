@@ -1,8 +1,9 @@
 DISCLAIMER: The use of the tool called wwwEnum is at your own risk. I, as the creator of wwwEnum, am not responsible for any damages or unauthorized actions caused by its usage. **It is crucial that users understand the potential consequences of interacting with web servers and ensure they have proper authorization before utilizing wwwEnum. Users should possess a comprehensive understanding of how web servers may respond to their actions.** Please exercise caution and act responsibly.
 
-## wwwEnum, an opensource webapp enumeration tool
+# wwwEnum, an opensource webapp enumeration tool
 
-The idea:
+
+## The idea:
 On an improperly configured pfSense server, distinct responses are generated depending on the existence of specific files. 
 For example, requesting "x.x.x.x/wizards" may result in a 403 Forbidden error, while "x.x.x.x/help.php" could produce a 404 or 200 status code, depending on file existence.
 By leveraging these file availability differences across different pfSense versions, it becomes possible to narrow down and identify the specific version in use.
