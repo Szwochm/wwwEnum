@@ -8,17 +8,37 @@ On an improperly configured pfSense server, distinct responses are generated dep
 For example, requesting "x.x.x.x/wizards" may result in a 403 Forbidden error, while "x.x.x.x/help.php" could produce a 404 or 200 status code, depending on file existence.
 By leveraging these file availability differences across different pfSense versions, it becomes possible to narrow down and identify the specific version in use.
 
+NOTE: For private repo's you will have to edit the script to use authorization tokens
+
 
 +========================================================================================+
 
 
 Usage:
+```
+python init.py
+python init2.py
+python differences.py
+python wordlistgenerator.py
+```
 
-init.py and init2.py grab every branch of a target from github. They are not a user friendly scripts. They are essentially the same file, however in my POC, pfsense, the /www directory changes paths. For versions 1_2, 2_0, 2_1 and 2_2 the path is path = "usr/local/www". In every other branch, the path is "src/usr/local/www". paths to repos will have to be set manually. Versions will have to be listed manually. Any deviations will have to be accounted for manually. 
+Then manually inspect the json files.
 
 
-After generating the csvs, I move them all into a seperate folder versionscvs. In this folder  I use "generatewordlist.py".
-This generates wordlist.txt which can now be used to fuzz the targets files and directories, in my case pfsense.
+
+There are 6 python scripts.
+The execution order is
+
+0. (Optional) getversions.py  --used by initWithVersions
+1. (init1.py, init2.py) OR initWithVersions.py. 
+2. differences.py
+3. (Optional) wordlistgenerator.py
+
+"init.py" and "init2.py" create a csv file of every item in the designated branches. They are not a user friendly scripts. They are essentially the same file, however in my POC, pfsense, the /www directory changes paths. For versions 1_2, 2_0, 2_1 and 2_2 the path is path = "usr/local/www". In every other branch, the path is "src/usr/local/www". paths to repos will have to be set manually. Versions will have to be listed manually. Any deviations will have to be accounted for manually. 
+
+"initWithVersions.py" is useful if every /www path is the same. Run, getversions.py first to generate a text file containing every possible branch. Then initWithVersions will just create csv files for every version listed in versions.txt
+
+"generatewordlist.py" -- This generates wordlist.txt which can now be used to fuzz the targets files and directories, in my case pfsense.
 
 Afterwards using "differencesgenerator.py", I use the generated json filestart at the master version, and work my way down until I can narrow down the potential version
 
@@ -62,7 +82,6 @@ Future plans:
  1) Combine all of the scripts into one for convienance and easier usability.
  
  2) Optimize so that the scripts aren't redundant, and for faster speed.
-
 
 
 
