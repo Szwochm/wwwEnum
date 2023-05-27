@@ -63,7 +63,7 @@ So now when we request <IP>/system_register.php we get a 200 code.
  ![image](https://github.com/Szwochm/wwwEnum/assets/1501624/b8fd7611-ae82-4dbf-87ec-4234eb4fdf58)
  
  This indicates that this file does exist, thus we can make an educated guess that the version of pfsense is either 2_6_0 or the master branch.
- NOTE: Sometimes it appears that nothing happens. If you receive a 200 request on some files, and a 404 on others, that is a strong indication that this method workds. 403's can be either or.
+ NOTE: Sometimes it appears that nothing happens. If you receive a 200 request on some files, and a 404 on others, that is a strong indication that this method workds. 403's may or may not indicate the existence of a file / directory.
  
  To further verify we can try files from other versions that we know are missing in master.
  
