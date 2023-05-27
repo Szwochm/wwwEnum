@@ -65,11 +65,11 @@ So now when we request <IP>/system_register.php we get a 200 code.
  This indicates that this file does exist, thus we can make an educated guess that the version of pfsense is either 2_6_0 or the master branch.
  NOTE: Sometimes it appears that nothing happens. If you receive a 200 request on some files, and a 404 on others, that is a strong indication that this method workds. 403's may or may not indicate the existence of a file / directory.
  
- To further verify we can try files from other versions that we know are missing in master.
+ To further verify we can try files from other versions
  
 ![image](https://github.com/Szwochm/wwwEnum/assets/1501624/fe071ebe-5d1a-4fc7-9a46-dfcc04c812c5)
  
- On attempting the request we get the following...
+ On attempting the request to csrf_error.php which exists on master but not 2_4_3 we get the following...
  ![image](https://github.com/Szwochm/wwwEnum/assets/1501624/efa3a36e-692c-40b2-8aa1-15ab1214f8e6)
 
  So obviously the file exists. This is in the "added files" section indicating that the master branch has this file but 2_4_3 does not. -- Note review the disclaimer. Know what will happen if you request arbitary files on a webapp.
@@ -78,6 +78,7 @@ So now when we request <IP>/system_register.php we get a 200 code.
  
  ![image](https://github.com/Szwochm/wwwEnum/assets/1501624/70227378-860e-4d52-b9db-22625156d342)
 
+ This file was in the missing section of the master.json file. This indicates that the master branch is missing this file, while 2_4_3 has this file.
  And there you have it. Based on the following steps I think you can safely assume that the pfsense version being used is either 2_6_0 or master.
  
  
