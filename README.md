@@ -28,10 +28,10 @@ Then manually inspect the json files.
 There are 6 python scripts.
 The execution order is
 
-0. (Optional) getversions.py  --used by initWithVersions
+0. (Optional) getversions.py  -> used by initWithVersions
 1. (init1.py, init2.py) OR initWithVersions.py. 
 2. differences.py
-3. (Optional) wordlistgenerator.py
+3. (Optional) wordlistgenerator.py -> use with dirbuster
 
 "init.py" and "init2.py" create a csv file of every item in the designated branches. They are not a user friendly scripts. They are essentially the same file, however in my POC, pfsense, the /www directory changes paths. For versions 1_2, 2_0, 2_1 and 2_2 the path is path = "usr/local/www". In every other branch, the path is "src/usr/local/www". paths to repos will have to be set manually. Versions will have to be listed manually. Any deviations will have to be accounted for manually. 
 
