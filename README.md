@@ -1,6 +1,8 @@
-DISCLAIMER: The use of the tool called wwwEnum is at your own risk. I, as the creator of wwwEnum, am not responsible for any damages or unauthorized actions caused by its usage. **It is crucial that users understand the potential consequences of interacting with web servers and ensure they have proper authorization before utilizing wwwEnum. Users should possess a comprehensive understanding of how web servers may respond to their actions.** Please exercise caution and act responsibly.
+
 
 # wwwEnum, an opensource webapp enumeration tool
+
+DISCLAIMER: The use of the tool called wwwEnum is at your own risk. I, as the creator of wwwEnum, am not responsible for any damages or unauthorized actions caused by its usage. **It is crucial that users understand the potential consequences of interacting with web servers and ensure they have proper authorization before utilizing wwwEnum. Users should possess a comprehensive understanding of how web servers may respond to their actions.** Please exercise caution and act responsibly.
 
 
 ## The idea:
