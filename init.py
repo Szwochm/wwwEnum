@@ -1,6 +1,7 @@
 import csv
 import requests
 import time
+import os
 
 def get_directory_contents(owner, repo, branch, path):
     url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}?ref={branch}"
@@ -22,18 +23,23 @@ branches = [
     "RELENG_2_1",
     "RELENG_2_2"
 ]
-path = "usr/local/www"
-delay = 3  # Delay in seconds between requests
+delay = 1  # Delay in seconds between requests
 
 for branch in branches:
+    version = branch.replace('/', '_')
+    csv_file = f"{version}.csv"
+    
+    if os.path.exists(csv_file):
+        print(f"CSV file {csv_file} already exists. Skipping.")
+        continue
+    
+    path = f"usr/local/www"
+    
     file_names, directory_names = get_directory_contents(owner, repo, branch, path)
 
     if file_names is None or directory_names is None:
         print(f"Failed to fetch directory contents for branch {branch}.")
         continue
-
-    version = branch.replace('/', '_')
-    csv_file = f"{version}.csv"
 
     with open(csv_file, 'w', newline='') as file:
         writer = csv.writer(file)
