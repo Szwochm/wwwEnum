@@ -1,7 +1,6 @@
 DISCLAIMER: The use of the tool called wwwEnum is at your own risk. I, as the creator of wwwEnum, am not responsible for any damages or unauthorized actions caused by its usage. **It is crucial that users understand the potential consequences of interacting with web servers and ensure they have proper authorization before utilizing wwwEnum. Users should possess a comprehensive understanding of how web servers may respond to their actions.** Please exercise caution and act responsibly.
 
-wwwEnum, an opensource webapp enumeration tool
-+========================================================================================+
+## wwwEnum, an opensource webapp enumeration tool
 
 The idea:
 On an improperly configured pfSense server, distinct responses are generated depending on the existence of specific files. 
@@ -10,21 +9,18 @@ By leveraging these file availability differences across different pfSense versi
 
 NOTE: For private repo's you will have to edit the script to use authorization tokens
 
+## Usage:
 
-+========================================================================================+
-
-
-Usage:
 ```
 python init.py
 python init2.py
 python differences.py
 python wordlistgenerator.py
 ```
-
 Then manually inspect the json files.
 
 
+## Details 
 
 There are 6 python scripts.
 The execution order is
@@ -40,7 +36,10 @@ The execution order is
 
 "generatewordlist.py" -- This generates wordlist.txt which can now be used to fuzz the targets files and directories, in my case pfsense.
 
-Afterwards using "differencesgenerator.py", I use the generated json filestart at the master version, and work my way down until I can narrow down the potential version
+"differencesgenerator.py" creates N json files, one for every version. In each json, it shows the differences between the given version and every other version. Example
+master.json will show the differences between master and 1_2, master and 2_0, master and 2_1, etc... NOTE: There is alot of redundant data, in the future I'll try to create a more streamlined file.
+
+## POC
 
 ![image](https://github.com/Szwochm/wwwEnum/assets/1501624/79197d57-f745-46f3-8b7a-8bfc9cc8837c)
 
