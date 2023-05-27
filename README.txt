@@ -15,6 +15,16 @@ NOTE: For private repo's you will have to edit the script to use authorization t
 
 
 Usage:
+```
+python init.py
+python init2.py
+python differences.py
+python wordlistgenerator.py
+```
+
+Then manually inspect the json files.
+
+
 
 There are 6 python scripts.
 The execution order is
